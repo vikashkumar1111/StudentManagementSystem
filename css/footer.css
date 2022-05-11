@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+.body{
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 45vh;
+    background-color: #333;
+}
+.abocrs{
+    display: flex;
+}
+
+.about{
+    color: #fff;
+    padding: 30px;
+    width: 60%;
+}
+.cources{
+    color: #fff;
+    padding: 30px;
+    width: 20%;
+}
+.cources li{
+    list-style: none;
+}
+.cources li a{
+    font-size: 1.2em;
+    color: #fff;
+    /* margin: 0 10px; */
+    /* display: inline-block; */
+    text-decoration: none;
+    opacity: 0.75;
+
+}
+footer{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background: #3586ff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.social_icons, 
+.menu{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.social_icons li,.menu li {
+    list-style: none;
+}
+.social_icons li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5%;
+}
+.social_icons li a :hover{
+  transform: translateY(-10px);   
+}
+
+.menu li a
+ {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.menu li a:hover
+{
+    opacity: 1;
+
+}
+footer p
+    {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+   

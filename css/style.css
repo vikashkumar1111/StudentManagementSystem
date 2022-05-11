@@ -1,0 +1,217 @@
+*{
+margin: 0; padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+/* :root {
+    --h1 :#1e1964;
+    --blue : #34A1CD;
+    --dark-purple : #55527C;
+    --grey : #B4B2C5;
+    --pink :  #EA4C89;
+    --circle : #F4F3FF;
+    --light-pink : #FFF5F6;
+    
+} */
+
+header{
+ width: 100%;
+ height: 100vh;
+ background-image: url('');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background:  #F4F3FF;
+    position: absolute;
+    top: -15%;
+    right: -1%;
+    /* left: 81%; */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.mainheader{
+ width: 100%;
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.mainheader .logo img{
+ width: 250px; height: 70px;
+ padding-left: 60px;
+}
+
+.mainheader nav{
+ width: 450px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.mainheader nav .a{
+    margin: 0px 30px;
+    color: #55527C;
+    font-size: 18px;
+    cursor: pointer;
+
+ text-decoration: none;
+ /* color: black; */
+ text-transform: capitalize;
+}
+
+
+
+
+.menubtn{
+ margin-right: 60px;
+}
+.mainheader button{
+ padding: 10px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+
+
+.main{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.main .right-sec{
+ padding-right: 70px;
+
+}
+.main .right-sec figure{
+border-radius: 10px;
+
+    width: 30%;
+    padding-top: 8%;
+    opacity: 84%;
+
+}
+.main .left-sec{
+ padding-left: 100px;
+}
+.main .left-sec span{
+    color: rgb(206, 87, 87);
+}
+
+.left-sec h2{
+ font-size: 20px;
+ text-transform: capitalize;
+ font-weight: lighter;
+ color: #242424;
+ margin-top: 100px;
+}
+
+.left-sec h1{
+ font-size: 55px;
+ text-transform: capitalize;
+ font-weight: 700;
+ margin: 15px 0;
+}
+
+.left-sec p{
+ margin-bottom: 20px;
+}
+
+.left-sec button{
+ padding: 15px 45px;
+ text-align: center;
+ font-size: 14px;
+ color: #fff;
+ border: none;
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+ border-radius: 10px;
+}
+
+.main2{
+    padding-top: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .main2.left{
+       padding: 10px;
+       width: fit-content;
+   }
+   .main2.right{
+    width: 35%;
+    height: 80vh;
+    overflow:scroll;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+    border-radius: 15px;
+   
+
+   }
+
+   .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-right: 8vw;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .container h4 b{
+    text-align: center;
+    font-size: 20px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+
+  #list li{
+    list-style: none;
+  
+}
+#list li::before{
+
+
+content: "\00BB";
+color: red;
+}
+.link
+{
+  margin-left: 50rem;
+  margin-bottom: -6rem;
+}
+.link span{
+  font-size: 3rem;
+}
+   
