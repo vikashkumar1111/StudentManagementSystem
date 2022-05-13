@@ -6,7 +6,7 @@ Student management system using PHP and MySQL is a web-based application. Studen
 
 ## Demo
 
-[i8school](https://i8school.epizy.com/i8/i8school.html)
+[i8school](https://i8school.epizy.com/i8school.html)
 
 
 ## Features
