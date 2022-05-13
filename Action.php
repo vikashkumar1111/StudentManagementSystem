@@ -15,6 +15,7 @@ if (isset ($_POST['sign_up'])){
 
     if($query){
         echo "inserted";
+        header('location:login.html');
     }
     else{
         echo "not inserted";
