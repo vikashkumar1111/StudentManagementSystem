@@ -36,19 +36,19 @@ include_once 'header.php';
                         <div class="nrow1">
                             <div class="form-notice">
                                 <label for="Title">Title</label>
-                                <input type="text" class="form-control" name="title">
+                                <input type="text" class="form-control" name="title" required>
                             </div>
                             <div class="form-notice">
                                 <label for="Title">Details</label>
-                                <textarea name="message" class="form-control" id="" cols="30" rows="10"></textarea>
+                                <textarea name="message" class="form-control" id="" cols="30" rows="10"></textarea required>
                             </div>
                             <div class="form-notice">
                                 <label for="Title">Posted By</label>
-                                <input type="text" class="form-control" name="post_by" value="<?php echo $_SESSION['admin']; ?>">
+                                <input type="text" class="form-control" name="post_by" value="<?php echo $_SESSION['admin']; ?>" >
                             </div>
                             <div class="form-notice">
                                 <label for="Title">Date</label>
-                                <input type="date" class="form-control" name="date">
+                                <input type="date" class="form-control" name="date" required>
                             </div>
                             <div class="form-notice btn-notice">
                                 <button type="submit" name="notice_save" class="btn-sub">Save</button>

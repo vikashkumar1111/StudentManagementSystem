@@ -44,7 +44,12 @@ $name=$_SESSION['admin'];
                             </div>
                             <div class="form-group">
                                 <label>Password *</label><br>
-                                <input type="text" placeholder="" class="form-control" name="password">
+                                <input type="password" placeholder="" class="form-control" name="password">
+
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password *</label><br>
+                                <input type="password" placeholder="" class="form-control" name="conf_pass">
 
                             </div>
                             <div class="form-group">
@@ -69,13 +74,8 @@ $name=$_SESSION['admin'];
                             </div>
                            
                          
-                            <div class="form-group">
-                                <label>Date Of Birth *</label><br>
-                                <input type="date" placeholder="dd/mm/yy" class="form-control"
-                                    data-position="bottom right" name="DOB">
-
-                            </div>
-                         </div>
+                        </div>
+                        
                             <div class="row2">
                             <div class="form-group">
                               <label>Father`s Name *</label><br>
@@ -148,7 +148,15 @@ $name=$_SESSION['admin'];
                                 <label>Phone</label><br>
                                 <input type="tel" placeholder="" class="form-control" maxlength="10" name="phone">
 
-                            </div> </div>
+                            </div> 
+                            <div class="form-group">
+                            <label>Date Of Birth *</label><br>
+                            <input type="date" placeholder="dd/mm/yy" class="form-control"
+                                data-position="bottom right" name="DOB">
+
+                        </div>
+                        
+                        </div>
                             <div class="row2">
                             <div class="form-group">
                                 <label>Address</label><br>
@@ -190,7 +198,7 @@ $name=$_SESSION['admin'];
                 </div>
                 <?php
                         include 'schoolDB.php';
-                        $sql = "SELECT * FROM `user`";
+                        $sql = "SELECT * FROM `login`";
                         $query = mysqli_query($conn,$sql);
 
                         $seq=1;
@@ -214,6 +222,25 @@ $name=$_SESSION['admin'];
               <div class="recentorders">
                 <div class="cardHeader">
                   <h2> Users Details</h2>
+                  <div class="header_elements">
+                        <ul>
+                        <li>
+                                <a href="edit_user.php">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="print-outline" onclick="window.print();"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./images/user_print.pdf">
+                                    <ion-icon name="download-outline"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="mainbox">
                  
@@ -221,7 +248,8 @@ $name=$_SESSION['admin'];
                 
                 <?php
                 
-                      ($res=($_SESSION["details"]))
+                      ($res=($_SESSION["details"]));
+                     // var_dump($_SESSION ['details']);
 
                     ?>    
                     <div class="box1" style="margin-right: 0px; width: 60%;">

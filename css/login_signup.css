@@ -232,3 +232,10 @@ button {
 .sign-up a :hover {
   color: #ffaa01;
 }
+
+@media (max-width: 290px) {
+  .form span{
+    font-size: 11px;
+  }
+  
+}

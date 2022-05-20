@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,26 +19,34 @@
         <div class="container">
             <div class="card">
             <form class="form" method="POST" action="Action.php">
+            <span style="color: red;    margin-top: 5px;"> <?php
+                    if(isset($_SESSION["error"])){
+                        $name_error = $_SESSION["error"];
+                        echo "? "."$name_error";
+                    }
+                    // die($_SESSION["error"])
+                ?>  </span>
+           
                 <img src="./images/logoi8.png" alt="">
                 <div class="form_page">
                     <div>
                         <label for="">Username</label>
                         <div class="input_con">
-                            <input type="text" placeholder="Enter Username" id="name"name="username">
+                            <input type="text" placeholder="Enter Username" id="name"name="username" required>
                             <ion-icon name="mail"></ion-icon>
                         </div>
                     </div>
                     <div>
                         <label for="">Password</label>
                         <div class="input_con">
-                            <input type="password" placeholder="Enter Password" id="pass" name="password">
+                            <input type="password" placeholder="Enter Password" id="pass" name="password" required>
                             <ion-icon name="bag"></ion-icon>
                         </div>
                     </div>
                     <div>
                         <label for=""> Conform Password</label>
                         <div class="input_con">
-                            <input type="password" placeholder="Enter Password" id="pass" name="conf_pass">
+                            <input type="password" placeholder="Enter Password" id="pass" name="conf_pass" required>
                             <ion-icon name="bag"></ion-icon>
                         </div>
                     </div>
@@ -78,7 +89,7 @@
             </form>
             <div class="sign-up">
                 Already a user ?
-                <a href="login.html">Login!</a>
+                <a href="login.php">Login!</a>
             </div>
         </div>
         </div>
@@ -92,3 +103,6 @@
 
 
 </html>
+<?php
+    unset($_SESSION["error"]);
+?>

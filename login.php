@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,20 +19,27 @@
         <div class="container">
             <div class="card">
             <form class="form" method="POST" action="Action.php">
-            
+            <span style="color: red;    margin-top: 5px;"> <?php
+                    if(isset($_SESSION["error"])){
+                        $nameError = $_SESSION["error"];
+                        echo "? "."$nameError";
+                    }
+                    // die($_SESSION["error"])
+               ?>  </span>
+           
                 <img src="./images/logoi8.png" alt="">
                 <div class="form_page">
                     <div class="con">
                         <label for="">Username</label>
                         <div class="input_con">
-                            <input type="text" placeholder="Enter Username" id="name" name="user_name">
+                            <input type="text" placeholder="Enter Username" id="name" name="user_name" required>
                             <ion-icon name="mail"></ion-icon>
                         </div>
                     </div>
                     <div class="con">
                         <label for="">Password</label>
                         <div class="input_con">
-                            <input type="password" placeholder="Enter Password" id="pass" name="password">
+                            <input type="password" placeholder="Enter Password" id="pass" name="password" required>
                             <ion-icon name="bag"></ion-icon>
                         </div>
                     </div>
@@ -37,7 +47,7 @@
                     <div class="con" id="checkbox">
                         <input type="checkbox" name="" id="">
                         <span>Remember me</span>
-                        <a href="">Forget Password</a>
+                        <a href="forget_password.php">Forget Password</a>
                     </div>
                     <div class="con">
                         <div>
@@ -76,7 +86,7 @@
             </form>
             <div class="sign-up">
                 Don't have an account ?
-                <a href="signup.html">Signup now!</a>
+                <a href="signup.php">Signup now!</a>
             </div>
         </div>
 

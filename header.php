@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin'])) {
-    header('location:login.html');
+    header('location:login.php');
 }
 // print_r($_SESSION["details"]); die;
 

@@ -19,7 +19,7 @@
     <div class="cardBox">
       <div class="card">
         <div>
-          <div class="numbers">1,504</div>
+          <div class="numbers">1,904</div>
           <div class="cardName">Students</div>
         </div>
         <div class="iconBx">
@@ -28,7 +28,7 @@
       </div>
       <div class="card">
         <div>
-          <div class="numbers">1,504</div>
+          <div class="numbers">1,045</div>
           <div class="cardName">Teachers</div>
         </div>
         <div class="iconBx">
@@ -37,7 +37,7 @@
       </div>
       <div class="card">
         <div>
-          <div class="numbers">1,504</div>
+          <div class="numbers">1,114</div>
           <div class="cardName">Parents</div>
         </div>
         <div class="iconBx">
@@ -46,7 +46,7 @@
       </div>
       <div class="card">
         <div>
-          <div class="numbers">1,504</div>
+          <div class="numbers">$1,504</div>
           <div class="cardName">Earnings</div>
         </div>
         <div class="iconBx">

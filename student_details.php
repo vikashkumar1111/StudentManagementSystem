@@ -56,11 +56,11 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <ion-icon name="print-outline"></ion-icon>
+                                    <ion-icon name="print-outline" onclick="window.print();"></ion-icon>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="./images/print.pdf">
                                     <ion-icon name="download-outline"></ion-icon>
                                 </a>
                             </li>

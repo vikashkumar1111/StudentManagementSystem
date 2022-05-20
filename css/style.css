@@ -14,6 +14,7 @@ font-family: 'Josefin Sans', sans-serif;
     
 } */
 
+
 header{
  width: 100%;
  
@@ -49,7 +50,7 @@ a{
 
 .mainheader .logo {
   width: 20%;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .mainheader nav{
@@ -152,7 +153,7 @@ border-radius: 10px;
     margin: 5rem 0rem;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
     align-items: center;
    }
@@ -250,10 +251,15 @@ img{
 
 @media (max-width:458px) {
 
-
+.main2{
+  flex-wrap: wrap;
+}
 .right{
   width:100%;
+margin: 23px;
 
-
+}
+.left{
+  width: 100%;
 }
 }
